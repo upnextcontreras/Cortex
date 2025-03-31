@@ -29,7 +29,7 @@ Swaip is a front-end prototype designed to provide users with a smooth, multi-st
 
 ## Display
 
-![Swaip Website Preview](Swaip.png)
+![Swaip](https://github.com/user-attachments/assets/1f699a55-ddfb-44ee-b1eb-282155354c6d)
 
 ## Getting Started
 
