@@ -37,3 +37,36 @@ Follow these steps to set up and run the project locally:
 
    ```bash
    git clone <repository-url>
+
+
+## Navigate to the Project Directory
+
+```bash
+cd swaip-seamless-banking
+
+## Launch the Project
+- Open index.html in your web browser.
+- Alternatively, use a local server (e.g., VS Code Live Server) for an enhanced development experience.
+
+## File Structure
+```bash
+swaip-seamless-banking/
+├── index.html       # Main HTML file containing the application structure.
+├── script.js        # JavaScript file handling interactivity and step navigation.
+└── style.css        # CSS file for styling and responsive design.
+
+## How It Works
+Fund Your Account:
+Input an amount and select a payment method to kickstart the process.
+
+## Convert to Credits:
+Adjust the slider to determine the number of credits to purchase; fees are calculated in real time.
+
+## Browse Agents:
+View a list of financial service agents with details and credit costs for each session.
+
+## Receive Personalized Advice:
+Share your investment preferences to receive customized financial insights.
+
+## Customization
+The codebase is thoroughly commented to help you understand its structure and functionality. Feel free to modify and extend the features to suit your needs.
