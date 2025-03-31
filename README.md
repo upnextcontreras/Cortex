@@ -31,7 +31,7 @@ To run the project locally, follow these steps:
 2. **Navigate to the Project Directory:**
    
   ```bash
-  cd swaip-seamless-banking
+    cd swaip-seamless-banking
 ```
 
 3. **Open the Project in Your Browser:**
