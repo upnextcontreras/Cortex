@@ -27,7 +27,7 @@ Swaip is a front-end prototype designed to provide users with a smooth, multi-st
 - **CSS3** – Styling and responsive design.
 - **JavaScript** – Managing interactivity and the multi-step process.
 
-## Display
+## Web Display
 
 ![Swaip](https://github.com/user-attachments/assets/1f699a55-ddfb-44ee-b1eb-282155354c6d)
 
