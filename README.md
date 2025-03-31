@@ -1,6 +1,6 @@
 # Swaip - Seamless Banking Experience
 
-Swaip is a front-end prototype designed to provide users with a smooth, multi-step banking experience. It guides users from funding their account to receiving personalized financial advice—all through an intuitive, interactive interface.
+Swaip is a front-end prototype designed to provide users with a smooth, multi-step banking experience. It guides users from funding their accounts to receiving personalized financial advice—all through an intuitive, interactive interface.
 
 ## Table of Contents
 
@@ -26,6 +26,10 @@ Swaip is a front-end prototype designed to provide users with a smooth, multi-st
 - **HTML5** – Structuring the content.
 - **CSS3** – Styling and responsive design.
 - **JavaScript** – Managing interactivity and the multi-step process.
+
+## Display
+
+![Swaip Website Preview](<img width="690" alt="Swaip" src="https://github.com/user-attachments/assets/0fc8664c-07af-4248-bde7-d32bf9a08927" />)
 
 ## Getting Started
 
