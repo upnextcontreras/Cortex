@@ -37,7 +37,6 @@ Follow these steps to set up and run the project locally:
 
    ```bash
    git clone <repository-url>
-```
 
 ## Navigate to the Project Directory
 
