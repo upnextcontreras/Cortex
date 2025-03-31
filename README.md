@@ -53,7 +53,7 @@ swaip-seamless-banking/
 ├── index.html       # Main HTML file containing the application structure.
 ├── script.js        # JavaScript file handling interactivity and step navigation.
 └── style.css        # CSS file for styling and responsive design.
-
+```
 ## How It Works
 Fund Your Account:
 Input an amount and select a payment method to kickstart the process.
