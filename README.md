@@ -8,7 +8,7 @@ Swaip is a front-end prototype designed to provide users with a smooth, multi-st
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [File Structure](#file-structure)
-- [Contributing](#contributing)
+- [Customization](#customization)
 
 ## Features
 
