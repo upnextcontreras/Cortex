@@ -37,13 +37,13 @@ Follow these steps to set up and run the project locally:
 
    ```bash
    git clone <repository-url>
-
+```
 
 ## Navigate to the Project Directory
 
 ```bash
 cd swaip-seamless-banking
-
+```
 ## Launch the Project
 - Open index.html in your web browser.
 - Alternatively, use a local server (e.g., VS Code Live Server) for an enhanced development experience.
