@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swaip - Seamless Banking Experience</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation header -->
+        <header>
+            <!-- Company Logo -->
+            <div class="logo">Swaip</div>
+            <!-- Navigation Links -->
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Transactions</a>
+                <a href="#">Support</a>
+            </div>
+            <!-- User Profile Section -->
+            <div class="user-section">
+                <div class="profile-icon">JD</div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Step Indicator Section -->
+            <div class="step-indicator">
+                <!-- Progress bar that visually indicates current step -->
+                <div class="progress-bar" id="progressBar"></div>
+                <!-- Step circles -->
+                <div class="step active" id="step1">1</div>
+                <div class="step" id="step2">2</div>
+                <div class="step" id="step3">3</div>
+                <div class="step" id="step4">4</div>
+            </div>
+
+            <!-- Step 1: Fund Your Account -->
+            <div class="step-content active" id="stepContent1">
+                <div class="card">
+                    <!-- Card header for step title and subtitle -->
+                    <div class="card-header">
+                        <h2 class="card-title">Fund Your Account</h2>
+                        <p class="card-subtitle">Add money to your Swaip account to get started</p>
+                    </div>
+                    
+                    <!-- Form group for funding amount input -->
+                    <div class="form-group">
+                        <label for="fundingAmount">Amount (USD)</label>
+                        <input type="number" id="fundingAmount" placeholder="Enter amount" value="100">
+                    </div>
+                    
+                    <!-- Form group for selecting payment method -->
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method</label>
+                        <select id="paymentMethod">
+                            <option value="bank">Bank Account</option>
+                            <option value="card">Credit/Debit Card</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Button to continue to next step -->
+                    <button class="btn" id="fundAccountBtn">Continue</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Swap for Credits -->
+            <div class="step-content" id="stepContent2">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Convert to Credits</h2>
+                        <p class="card-subtitle">Choose how many credits you'd like to purchase</p>
+                    </div>
+                    
+                    <!-- Display available USD balance -->
+                    <div class="balance-container">
+                        <div class="balance-card">
+                            <div class="balance-title">Available Balance</div>
+                            <div class="balance-amount" id="availableBalance">$100.00</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slider to select credit amount -->
+                    <div class="form-group">
+                        <label for="swapSlider">Select Credit Amount</label>
+                        <div class="slider-container">
+                            <input type="range" min="10" max="100" value="50" class="slider" id="swapSlider">
+                            <div class="slider-value" id="sliderValue">50 Credits ($50.00)</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Summary items: Rate and Processing Fee -->
+                    <div class="summary-item">
+                        <div class="summary-label">Rate</div>
+                        <div class="summary-value">1 Credit = $1.00</div>
+                    </div>
+                    
+                    <div class="summary-item">
+                        <div class="summary-label">Processing Fee</div>
+                        <div class="summary-value" id="processingFee">$0.50</div>
+                    </div>
+                    
+                    <!-- Button to purchase credits and proceed -->
+                    <div class="form-group" style="margin-top: 20px;">
+                        <button class="btn" id="swapForCreditsBtn">Purchase Credits</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Browse Agents -->
+            <div class="step-content" id="stepContent3">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Choose an Agent</h2>
+                        <p class="card-subtitle">Select a service to use with your credits</p>
+                    </div>
+                    
+                    <!-- Display available credits and remaining USD balance -->
+                    <div class="balance-container">
+                        <div class="balance-card">
+                            <div class="balance-title">Available Credits</div>
+                            <div class="balance-amount" id="availableCredits">50</div>
+                        </div>
+                        <div class="balance-card">
+                            <div class="balance-title">USD Balance</div>
+                            <div class="balance-amount" id="remainingUsdBalance">$50.00</div>
+                        </div>
+                    </div>
+                    
+                    <!-- List of available agents/services -->
+                    <div class="agent-list">
+                        <div class="agent-card" id="financialAdvisorAgent">
+                            <div class="agent-icon">💼</div>
+                            <h3 class="agent-name">Financial Advisor</h3>
+                            <p class="agent-description">Get personalized investment advice and portfolio management</p>
+                            <p class="credit-cost">10 credits per session</p>
+                        </div>
+                        
+                        <div class="agent-card" id="budgetingAgent">
+                            <div class="agent-icon">📊</div>
+                            <h3 class="agent-name">Budgeting Assistant</h3>
+                            <p class="agent-description">Track expenses and create savings plans to meet your goals</p>
+                            <p class="credit-cost">5 credits per month</p>
+                        </div>
+                        
+                        <div class="agent-card" id="taxAgent">
+                            <div class="agent-icon">📝</div>
+                            <h3 class="agent-name">Tax Preparation</h3>
+                            <p class="agent-description">Automatically prepare your tax documents and maximize returns</p>
+                            <p class="credit-cost">15 credits per filing</p>
+                        </div>
+                        
+                        <div class="agent-card" id="billPayAgent">
+                            <div class="agent-icon">💸</div>
+                            <h3 class="agent-name">Bill Payment</h3>
+                            <p class="agent-description">Set up automated bill payments and never miss a due date</p>
+                            <p class="credit-cost">2 credits per payment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Interact with Agent -->
+            <div class="step-content" id="stepContent4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Financial Advisor</h2>
+                        <p class="card-subtitle">Your personal financial advisor is ready to help</p>
+                    </div>
+                    
+                    <!-- Display session cost and remaining credits -->
+                    <div class="balance-container">
+                        <div class="balance-card">
+                            <div class="balance-title">Session Cost</div>
+                            <div class="balance-amount">10 Credits</div>
+                        </div>
+                        <div class="balance-card">
+                            <div class="balance-title">Remaining Credits</div>
+                            <div class="balance-amount" id="remainingCredits">40</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Form to gather investment information -->
+                    <div class="form-group">
+                        <label for="investmentGoal">What's your primary investment goal?</label>
+                        <select id="investmentGoal">
+                            <option value="retirement">Retirement Planning</option>
+                            <option value="shortTerm">Short-term Savings</option>
+                            <option value="college">College Fund</option>
+                            <option value="homeOwnership">Home Ownership</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="riskTolerance">Risk Tolerance</label>
+                        <select id="riskTolerance">
+                            <option value="low">Conservative</option>
+                            <option value="medium">Moderate</option>
+                            <option value="high">Aggressive</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="timeHorizon">Investment Timeframe</label>
+                        <select id="timeHorizon">
+                            <option value="short">1-3 years</option>
+                            <option value="medium">4-10 years</option>
+                            <option value="long">10+ years</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Button to get personalized advice -->
+                    <button class="btn" id="getAdviceBtn">Get Personalized Advice</button>
+                    
+                    <!-- Success message displayed after getting advice -->
+                    <div class="success-message hidden" id="successMessage">
+                        <div class="success-icon">✓</div>
+                        <h3 class="text-center mb-20">Financial plan generated successfully!</h3>
+                        <p class="text-center">We've created a personalized investment strategy based on your goals and preferences. Your financial advisor will be in touch shortly with the full details.</p>
+                        <div style="text-align: center; margin-top: 30px;">
+                            <button class="btn" id="backToHomeBtn">Back to Home</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
